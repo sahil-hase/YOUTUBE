@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -25%;
+    display: flex;
+}
+
+.logo p{
+    margin-top: 10px;
+}
+
+sup{
+color:grey;
+font-weight: 100;
+font-size: 15px;
+}
+.search-bar {
+    height: 6vh;
+    width: 42vw;
+    background-color: transparent;
+    border-radius: 4vw;
+    border: 1px solid grey;
+    margin-left: -20%;
+    display: flex;
+}
+
+.search-bar p {
+    margin-left: 3%;
+    margin-top: 2%;
+    font-size: 15px;
+    color: grey;
+}
+
+.search-button {
+    background-color: rgb(43, 37, 37);
+    height: 95%;
+    width: 11%;
+    font-size: 20px;
+    margin-left: 32.9vw;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid rgb(241, 234, 234);
+    overflow: hidden;
+    position: relative;
+    opacity: 50%;
+}
+
+.search-bar i {
+    font-size: 23px;
+    margin-left: 20%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+}
+
+.user-options button {
+    margin-left: 15px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+aside {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+    padding-top: 60px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background-color:black;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.video-info {
+    margin-top: 10px;
+}
+
+.video-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #f1f1f1;
+}
+
+.video-info p {
+    font-size: 14px;
+    color: gray;
+}
+
+.toggle-sidebar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+aside{
+    background-color:black;
+    margin-top: 1%;
+    border-right:1px solid gray;
+}
+
+aside li{
+    color: #f1f1f1;
+    padding: 1vh;
+}
+aside.hidden {
+    display: none;
+}
+
+main.expanded {
+    margin-left: 0;
+    padding-left: 20px;
+}
